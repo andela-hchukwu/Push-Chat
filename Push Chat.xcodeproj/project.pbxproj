@@ -20,8 +20,41 @@
 		47443AA022F0934100AB32D7 /* UNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47443A9F22F0934100AB32D7 /* UNService.swift */; };
 		47443AA222F0E84700AB32D7 /* SNSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47443AA122F0E84700AB32D7 /* SNSService.swift */; };
 		47443AA422F8448400AB32D7 /* NotificationIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47443AA322F8448400AB32D7 /* NotificationIDs.swift */; };
+		47443AA622F856F100AB32D7 /* KyleAlert.wav in Resources */ = {isa = PBXBuildFile; fileRef = 47443AA522F856F100AB32D7 /* KyleAlert.wav */; };
+		47443AAD22F857C600AB32D7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47443AAC22F857C600AB32D7 /* UserNotifications.framework */; };
+		47443AAF22F857C600AB32D7 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47443AAE22F857C600AB32D7 /* UserNotificationsUI.framework */; };
+		47443AB222F857C600AB32D7 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47443AB122F857C600AB32D7 /* NotificationViewController.swift */; };
+		47443AB522F857C600AB32D7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47443AB322F857C600AB32D7 /* MainInterface.storyboard */; };
+		47443AB922F857C600AB32D7 /* Content Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 47443AAB22F857C600AB32D7 /* Content Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		47443ABE22F858F000AB32D7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47443A9322E72A7D00AB32D7 /* Message.swift */; };
+		47443ABF22F858F700AB32D7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47443A9722E7313600AB32D7 /* User.swift */; };
+		47443AC022F8591000AB32D7 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47443A9122E72A1900AB32D7 /* MessageCell.swift */; };
 		CFB264D1F1C206DFDDDE4F2E /* Pods_Push_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C0E84A37B281799767A3757 /* Pods_Push_Chat.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47443AB722F857C600AB32D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47443A7022E722F400AB32D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47443AAA22F857C600AB32D7;
+			remoteInfo = "Content Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		47443ABD22F857C600AB32D7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				47443AB922F857C600AB32D7 /* Content Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1C0E84A37B281799767A3757 /* Pods_Push_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Push_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +73,13 @@
 		47443A9F22F0934100AB32D7 /* UNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNService.swift; sourceTree = "<group>"; };
 		47443AA122F0E84700AB32D7 /* SNSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSService.swift; sourceTree = "<group>"; };
 		47443AA322F8448400AB32D7 /* NotificationIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationIDs.swift; sourceTree = "<group>"; };
+		47443AA522F856F100AB32D7 /* KyleAlert.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = KyleAlert.wav; sourceTree = "<group>"; };
+		47443AAB22F857C600AB32D7 /* Content Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Content Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47443AAC22F857C600AB32D7 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		47443AAE22F857C600AB32D7 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		47443AB122F857C600AB32D7 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		47443AB422F857C600AB32D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		47443AB622F857C600AB32D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0E5BCDB34569839D89567ED /* Pods-Push Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Push Chat/Pods-Push Chat.release.xcconfig"; sourceTree = "<group>"; };
 		F116BAAD248EAE1F8E27BBBE /* Pods-Push Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push Chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Push Chat/Pods-Push Chat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,6 +93,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		47443AA822F857C600AB32D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47443AAF22F857C600AB32D7 /* UserNotificationsUI.framework in Frameworks */,
+				47443AAD22F857C600AB32D7 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -60,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				47443A7A22E722F400AB32D7 /* Push Chat */,
+				47443AB022F857C600AB32D7 /* Content Extension */,
 				47443A7922E722F400AB32D7 /* Products */,
 				A3A06981B38942160D1AFCEB /* Pods */,
 				70B4B1A2CFC9FCA025151AAC /* Frameworks */,
@@ -70,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				47443A7822E722F400AB32D7 /* Push Chat.app */,
+				47443AAB22F857C600AB32D7 /* Content Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +133,7 @@
 				47443A8E22E7231500AB32D7 /* Controller */,
 				47443A8D22E7230700AB32D7 /* Service */,
 				47443A8722E722F500AB32D7 /* Info.plist */,
+				47443AA522F856F100AB32D7 /* KyleAlert.wav */,
 			);
 			path = "Push Chat";
 			sourceTree = "<group>";
@@ -127,10 +179,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		47443AB022F857C600AB32D7 /* Content Extension */ = {
+			isa = PBXGroup;
+			children = (
+				47443AB122F857C600AB32D7 /* NotificationViewController.swift */,
+				47443AB322F857C600AB32D7 /* MainInterface.storyboard */,
+				47443AB622F857C600AB32D7 /* Info.plist */,
+			);
+			path = "Content Extension";
+			sourceTree = "<group>";
+		};
 		70B4B1A2CFC9FCA025151AAC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				1C0E84A37B281799767A3757 /* Pods_Push_Chat.framework */,
+				47443AAC22F857C600AB32D7 /* UserNotifications.framework */,
+				47443AAE22F857C600AB32D7 /* UserNotificationsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,15 +220,34 @@
 				47443A7522E722F400AB32D7 /* Frameworks */,
 				47443A7622E722F400AB32D7 /* Resources */,
 				F9CFCF4027E1E92AEBE3424B /* [CP] Embed Pods Frameworks */,
+				47443ABD22F857C600AB32D7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				47443AB822F857C600AB32D7 /* PBXTargetDependency */,
 			);
 			name = "Push Chat";
 			productName = "Push Chat";
 			productReference = 47443A7822E722F400AB32D7 /* Push Chat.app */;
 			productType = "com.apple.product-type.application";
+		};
+		47443AAA22F857C600AB32D7 /* Content Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47443ABA22F857C600AB32D7 /* Build configuration list for PBXNativeTarget "Content Extension" */;
+			buildPhases = (
+				47443AA722F857C600AB32D7 /* Sources */,
+				47443AA822F857C600AB32D7 /* Frameworks */,
+				47443AA922F857C600AB32D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Content Extension";
+			productName = "Content Extension";
+			productReference = 47443AAB22F857C600AB32D7 /* Content Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -177,6 +260,9 @@
 				ORGANIZATIONNAME = "Henry Chukwu";
 				TargetAttributes = {
 					47443A7722E722F400AB32D7 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					47443AAA22F857C600AB32D7 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -195,6 +281,7 @@
 			projectRoot = "";
 			targets = (
 				47443A7722E722F400AB32D7 /* Push Chat */,
+				47443AAA22F857C600AB32D7 /* Content Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -206,7 +293,16 @@
 			files = (
 				47443A8622E722F500AB32D7 /* LaunchScreen.storyboard in Resources */,
 				47443A8322E722F500AB32D7 /* Assets.xcassets in Resources */,
+				47443AA622F856F100AB32D7 /* KyleAlert.wav in Resources */,
 				47443A8122E722F400AB32D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47443AA922F857C600AB32D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47443AB522F857C600AB32D7 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +375,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		47443AA722F857C600AB32D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47443AB222F857C600AB32D7 /* NotificationViewController.swift in Sources */,
+				47443AC022F8591000AB32D7 /* MessageCell.swift in Sources */,
+				47443ABE22F858F000AB32D7 /* Message.swift in Sources */,
+				47443ABF22F858F700AB32D7 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47443AB822F857C600AB32D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47443AAA22F857C600AB32D7 /* Content Extension */;
+			targetProxy = 47443AB722F857C600AB32D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		47443A7F22E722F400AB32D7 /* Main.storyboard */ = {
@@ -296,6 +411,14 @@
 				47443A8522E722F500AB32D7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		47443AB322F857C600AB32D7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47443AB422F857C600AB32D7 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -421,6 +544,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F116BAAD248EAE1F8E27BBBE /* Pods-Push Chat.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A39EXWY942;
@@ -440,6 +564,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A0E5BCDB34569839D89567ED /* Pods-Push Chat.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A39EXWY942;
@@ -450,6 +575,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.henry.Push-Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		47443ABB22F857C600AB32D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A39EXWY942;
+				INFOPLIST_FILE = "Content Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henry.Push-Chat.Content-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47443ABC22F857C600AB32D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A39EXWY942;
+				INFOPLIST_FILE = "Content Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henry.Push-Chat.Content-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -472,6 +635,15 @@
 			buildConfigurations = (
 				47443A8B22E722F500AB32D7 /* Debug */,
 				47443A8C22E722F500AB32D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47443ABA22F857C600AB32D7 /* Build configuration list for PBXNativeTarget "Content Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47443ABB22F857C600AB32D7 /* Debug */,
+				47443ABC22F857C600AB32D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
